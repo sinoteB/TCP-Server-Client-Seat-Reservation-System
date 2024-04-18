@@ -1,4 +1,4 @@
-## Seat Reservation System
+# Seat Reservation System
 
 This repository contains a simple client-server application that implements a seat reservation system. The system allows clients to reserve seats in a grid layout either manually or automatically based on availability.
 Features
@@ -7,13 +7,13 @@ Features
     Client Application: Allows users to reserve seats manually by specifying the desired row and column, or automatically, where the system picks a random seat.
     Configuration via INI File: For automatic mode, the client can specify settings like server IP, port, and timeout through a .txt file.
 
-# System Requirements
+## System Requirements
 
     Linux operating system
     GCC for compiling the C files
     Standard C libraries
 
-# Installation
+## Installation
 
     Clone the repository to your local machine:
 
@@ -28,7 +28,7 @@ bash
     gcc server.c -o server
     gcc client.c -o client
 
-# Usage
+## Usage
 Server
 
 Run the server application:
@@ -39,7 +39,7 @@ bash
 
     length and width are optional parameters that define the dimensions of the seating grid. If not provided, a default 10x10 grid is used.
 
-# Client
+## Client
 
 Run the client application:
 
@@ -64,17 +64,17 @@ ip = 127.0.0.1
 port = 5437
 timeout = 100
 
-# Server Logic
+## Server Logic
 
     Initializes a seat grid and listens for incoming client connections.
     Processes each reservation request, updates the seat status, and responds to the client with the reservation outcome.
 
-# Client Logic
+## Client Logic
 
     Connects to the server either in manual or automatic mode.
     In automatic mode, reads server connection details from an INI file.
     Sends seat reservation requests and handles server responses.
 
-# Contributors
+## Contributors
 
 Feel free to fork this project and contribute to its development. If you encounter any issues or have suggestions for improvements, please open an issue in this repository.
